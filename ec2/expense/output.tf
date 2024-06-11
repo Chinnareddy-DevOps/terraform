@@ -1,3 +1,3 @@
 output "instance_info" {
-  value = aws_instance.DB
+  value = aws_instance.Expense
 }

@@ -1,7 +1,7 @@
-
+#ec2 variables
 variable "instance_names" {
     type = list
-    default = ["DB", "Backend", "Frontend" ]
+    default = ["db", "backend", "frontend" ]
 }
 
 variable "image_id" {
@@ -24,6 +24,8 @@ variable "common_tags" {
     }
 }
 
+# sg variables
+
 variable "sg_name" {
     default = "allow_ssh"
 }
@@ -42,4 +44,12 @@ variable "protocol" {
 variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"]
+}
+#r53 variables
+variable "zone_id" {
+    default = "Z02658742ZQEBPBXX5YM9"
+}
+
+variable "domain_name" {
+    default = "daws78s.online"
 }

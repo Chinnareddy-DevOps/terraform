@@ -47,9 +47,9 @@ variable "allowed_cidr" {
 }
 #r53 variables
 variable "zone_id" {
-    default = "Z02658742ZQEBPBXX5YM9"
+    default = "Z08422883FRLSZ1ROER1K"
 }
 
 variable "domain_name" {
-    default = "daws78s.online"
+    default = "chinna.online"
 }
